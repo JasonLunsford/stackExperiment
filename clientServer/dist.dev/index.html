@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="beetleLoop" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title ng-bind="$state.current.data.pageTitle"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endinject -->
+</head>
+<body>
+	<div ui-view="top_navigation"></div>
+	<div ui-view="body_content"></div>
+<!-- bower:js -->
+<script src="bower_components/meteor-runtime-config.js"></script>
+<script src="bower_components/meteor-client-side.bundle.min.js"></script>
+<script src="bower_components/ace.js"></script>
+<script src="bower_components/angular.js"></script>
+<script src="bower_components/angular-meteor.bundle.min.js"></script>
+<script src="bower_components/angular-meteor.js"></script>
+<script src="bower_components/ui-ace.js"></script>
+<script src="bower_components/angular-animate.js"></script>
+<script src="bower_components/angular-base64.js"></script>
+<script src="bower_components/angular-file-directive.js"></script>
+<script src="bower_components/angular-ui-router.js"></script>
+<script src="bower_components/lodash.js"></script>
+<script src="bower_components/mode-css.js"></script>
+<script src="bower_components/mode-html.js"></script>
+<script src="bower_components/mode-scss.js"></script>
+<script src="bower_components/restangular.js"></script>
+<script src="bower_components/theme-twilight.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="beetleLoop.app.js"></script>
+<script src="components/users/userShell.ctrl.js"></script>
+<script src="components/previewWindow/previewWindow.dir.js"></script>
+<script src="components/layout/workspaceShell.ctrl.js"></script>
+<script src="components/layout/topNavigationShell.ctrl.js"></script>
+<script src="components/layout/contentShell.ctrl.js"></script>
+<script src="components/contentNavigation/contentNavigation.dir.js"></script>
+<script src="components/fileUpload/fileUpload.dir.js"></script>
+<script src="components/codeEditor/codeEditor.dir.js"></script>
+<script src="services/_services.js"></script>
+<script src="services/userbox.srv.js"></script>
+<script src="services/routestate.srv.js"></script>
+<script src="services/projectbox.srv.js"></script>
+<script src="services/mongorx.srv.js"></script>
+<script src="services/connector.srv.js"></script>
+<script src="angularMeteor/meteor_config.js"></script>
+<script src="beetleLoop.routes.js"></script>
+<script src="beetleLoop.ctrl.js"></script>
+<script src="beetleLoop.config.js"></script>
+<!-- endinject -->
+</body>
+</html>

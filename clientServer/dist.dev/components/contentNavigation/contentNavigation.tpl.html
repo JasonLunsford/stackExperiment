@@ -1,0 +1,16 @@
+<div>
+	<div ng-if="contentNavCtrl.siteList">
+		<ul>
+			<li ng-repeat="site in contentNavCtrl.contentCollection">
+				<a href="" ng-click="contentNavCtrl.boxClick(site.site_id)">{{site.site_name}}</a>
+			</li>
+		</ul>
+	</div>
+	<div ng-if="contentNavCtrl.pageList">
+		<ul>
+			<li ng-repeat="page in contentNavCtrl.contentCollection">
+				<a href="" ng-click="contentNavCtrl.boxClick(page.page_id)">{{page.page_name}}</a>
+			</li>
+		</ul>
+	</div>
+</div>

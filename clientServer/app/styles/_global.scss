@@ -1,0 +1,53 @@
+.ace_editor {
+	height: 350px;
+}
+
+.upload-form {
+	margin-bottom:10px;
+
+	fieldset {
+		border:2px solid #232323;
+	}
+
+	input[type="file"] {
+		border:1px solid #232323;
+		margin-bottom:5px;
+		padding:5px 2px;
+		width:50%;
+	}
+
+	ul {
+		list-style:none;
+		margin:0px;
+		padding:0px;
+
+		li {
+			cursor:pointer;
+			padding:5px 5px 5px 0px;
+
+			i {
+				font-style:normal;
+				font-weight:bold;
+				float:right;
+			}
+
+			i:hover {
+				color:#ff0000;
+			}
+		}
+
+		li:hover {
+			background-color:#f7d4d4;
+		}
+	}
+
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+	display: none !important;
+}

@@ -1,0 +1,23 @@
+<div class="upload-form">
+	<form name="fileUpCtrl.cssUploadForm">
+		<fieldset>
+			<legend>CSS Upload</legend>
+			<input type="file"
+			       file="fileUpCtrl.cssFileCollection"
+			       accept=".css,.scss"
+			       multiple
+			       required>
+			<button ng-disabled="fileUpCtrl.cssUploadForm.$invalid" 
+				    ng-click="fileUpCtrl.uploadFiles()">Upload CSS</button>
+			<div>
+				<ul>
+					<li ng-repeat="currentFile in fileUpCtrl.recentCssFiles track by currentFile.name">
+						<span ng-if="currentFile.fileType === 'text/css'">{{currentFile.name}}</span>
+						<span ng-if="currentFile.fileType === 'text/scss'">{{currentFile.name}} [SCSS Disabled]</span>
+						<i ng-click="fileUpCtrl.removeCssFile(currentFile)">X</i>
+					</li>
+				</ul>
+			</div>
+		</fieldset>
+	</form>
+</div>
